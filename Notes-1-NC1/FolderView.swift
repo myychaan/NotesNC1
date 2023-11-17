@@ -47,8 +47,8 @@ struct FolderView: View {
                         HStack{
                             
                             VStack(alignment:.leading){
-                                Text("Diff").bold()
-                                Text("sat").foregroundColor(.gray)
+                                Text("Differenza Modale/Navigation stack").bold()
+                                Text("saturday No Additional Text").foregroundColor(.gray)
                                 HStack{
                                     Image(systemName: "folder")
                                     Text("Notes")}.foregroundColor(.gray)
@@ -56,8 +56,8 @@ struct FolderView: View {
                         }
                         HStack{
                             VStack(alignment:.leading){
-                                Text("Music").bold()
-                                Text("10:09  Bring me the Horizon").foregroundColor(.gray)
+                                Text("Idea Video").bold()
+                                Text("Friday  Portraits").foregroundColor(.gray)
                                 HStack{
                                     Image(systemName: "folder")
                                     Text("Notes")}.foregroundColor(.gray)
@@ -65,8 +65,8 @@ struct FolderView: View {
                         }
                         HStack{
                             VStack(alignment:.leading){
-                                Text("Riflessioni Libro").bold()
-                                Text("11:38  Riflettere sull'impaginazione,..").foregroundColor(.gray)
+                                Text("Comprare Sketchbook").bold()
+                                Text("Friday  Matite 6B").foregroundColor(.gray)
                                 HStack{
                                     Image(systemName: "folder")
                                     Text("Notes")}.foregroundColor(.gray)
@@ -78,8 +78,8 @@ struct FolderView: View {
                     Section(header: Text("Previous 30 Days")) {
                         HStack{
                             VStack(alignment:.leading){
-                                Text("Music").bold()
-                                Text("10:09  Bring me the Horizon").foregroundColor(.gray)
+                                Text("Design Tips").bold()
+                                Text("8/10/23  How to do animation..").foregroundColor(.gray)
                                 HStack{
                                     Image(systemName: "folder")
                                     Text("Notes")}.foregroundColor(.gray)
@@ -87,8 +87,8 @@ struct FolderView: View {
                         }
                         HStack{
                             VStack(alignment:.leading){
-                                Text("Riflessioni Libro").bold()
-                                Text("11:38  Riflettere sull'impaginazione,..").foregroundColor(.gray)
+                                Text("Lista Spesa").bold()
+                                Text("19/10/23  Yogurt, latte,..").foregroundColor(.gray)
                                 HStack{
                                     Image(systemName: "folder")
                                     Text("Notes")}.foregroundColor(.gray)

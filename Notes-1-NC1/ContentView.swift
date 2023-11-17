@@ -17,7 +17,7 @@ struct ContentView: View {
                     Section(header: Text("iCloud")) {
                         
                         NavigationLink{
-                          FolderView()
+                            FolderView()
                         } label: {
                             
                             HStack{
@@ -31,7 +31,7 @@ struct ContentView: View {
                             }
                         }
                         NavigationLink{
-                           FolderView()
+                            FolderView()
                         } label: {
                             HStack{
                                 Image(systemName: "folder")
@@ -44,7 +44,7 @@ struct ContentView: View {
                             };
                         }
                         NavigationLink{
-                           FolderView()
+                            FolderView()
                         } label: {
                             HStack{
                                 Image(systemName: "folder")
@@ -54,28 +54,30 @@ struct ContentView: View {
                                     .foregroundStyle(.gray)
                                     .frame(maxWidth: .infinity, alignment: .trailing)
                                 
-                                   
+                                
                                 
                             };
                         }
                     }.headerProminence(.increased)
                     
                     
-                        
-                        
-                    }.toolbar{
-                        
-                        ToolbarItem(placement: .bottomBar) {
-                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                                Image(systemName: "folder.badge.plus")
+                    
+                    
+                }.toolbar{
+                    
+                    ToolbarItem(placement: .bottomBar) {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            Image(systemName: "folder.badge.plus")
+                                .foregroundStyle(.yellow)
+                        })
+                    }
+                    ToolbarItem(placement: .bottomBar){
+                            NavigationLink(destination: NewNoteView()){
+                                Image(systemName: "square.and.pencil")
                                     .foregroundStyle(.yellow)
-                            })
-                        }
-                        ToolbarItem(placement: .bottomBar) {
-                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                                Image(systemName: "square.and.pencil") .foregroundStyle(.yellow)
-                            })
-                        }
+                            }
+                        
+                    }
                         ToolbarItem(placement: .topBarTrailing) {
                             Button("Edit") {}
                                 .foregroundStyle(.yellow)
@@ -85,7 +87,8 @@ struct ContentView: View {
                 }.navigationTitle("Folders")
             }.searchable(text: $searchText)
         }
-}
+    }
+
 #Preview {
    ContentView()
 }

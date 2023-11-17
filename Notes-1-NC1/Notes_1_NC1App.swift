@@ -12,6 +12,7 @@ struct Notes_1_NC1App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .tint(.yellow)
         }
     }
 }

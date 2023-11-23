@@ -13,6 +13,8 @@ struct NewNoteView: View {
         NavigationStack{
             VStack{
                 TextEditor(text: $noteText)
+                    .accessibility(label: Text("Note text Field is editing, insertion point at start"))
+                    .accessibility(hint: Text("swipe double down to select a custom action, then double tap to activate."))
                     .frame(minWidth: 0,maxWidth: .infinity,minHeight: 0, maxHeight: .infinity)
                     .padding()
             }.toolbar{
@@ -28,12 +30,13 @@ struct NewNoteView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {}, label: {
-                        Image(systemName: "square.and.pencil") .foregroundStyle(.yellow)
+                        Text("Done") .foregroundStyle(.yellow)
                     })
                 }
-            }.navigationBarTitleDisplayMode(.inline)
-        }
-    }
+                   
+                    }.navigationBarTitleDisplayMode(.inline)
+                }
+            }
 }
 #Preview {
     NewNoteView()

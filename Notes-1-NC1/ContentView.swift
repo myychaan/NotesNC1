@@ -29,7 +29,7 @@ struct ContentView: View {
                                     .frame(maxWidth: .infinity, alignment: .trailing)
                                 
                             }
-                        }
+                        }.accessibility(label: Text("All iCloud, 6 notes, "))
                         NavigationLink{
                             FolderView()
                         } label: {
@@ -42,7 +42,7 @@ struct ContentView: View {
                                     .frame(maxWidth: .infinity, alignment: .trailing)
                                 
                             };
-                        }
+                        }.accessibility(label: Text("notes, 0 notes"))
                         NavigationLink{
                             FolderView()
                         } label: {
@@ -57,7 +57,8 @@ struct ContentView: View {
                                 
                                 
                             };
-                        }
+                        }.accessibility(label: Text("All iCloud, 6 notes, "))
+                       
                     }.headerProminence(.increased)
                     
                     

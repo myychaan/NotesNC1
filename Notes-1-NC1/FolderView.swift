@@ -20,7 +20,7 @@ struct FolderView: View {
                                 Text("Music").bold()
                                 Text("10:09  Bring me the Horizon").foregroundColor(.gray)
                                 HStack{
-                                    Image(systemName: "folder")
+                                    Image(systemName: "folder").accessibilityLabel(Text("Folder"))
                                     Text("Notes")}.foregroundColor(.gray)
                             }
                         }
@@ -29,7 +29,7 @@ struct FolderView: View {
                                 Text("Riflessioni Libro").bold()
                                 Text("11:38  Riflettere sull'impaginazione,..").foregroundColor(.gray)
                                 HStack{
-                                    Image(systemName: "folder")
+                                    Image(systemName: "folder").accessibilityLabel(Text("Folder"))
                                     Text("Notes")}.foregroundColor(.gray)
                             }
                         }
@@ -38,7 +38,7 @@ struct FolderView: View {
                                 Text("Lista Valigia").bold()
                                 Text("14:40  Cuffia").foregroundColor(.gray)
                                 HStack{
-                                    Image(systemName: "folder")
+                                    Image(systemName: "folder").accessibilityLabel(Text("Folder"))
                                     Text("Notes")}.foregroundColor(.gray)
                             }
                         }
@@ -50,7 +50,7 @@ struct FolderView: View {
                                 Text("Differenza Modale/Navigation stack").bold()
                                 Text("saturday No Additional Text").foregroundColor(.gray)
                                 HStack{
-                                    Image(systemName: "folder")
+                                    Image(systemName: "folder").accessibilityLabel(Text("Folder"))
                                     Text("Notes")}.foregroundColor(.gray)
                             }
                         }
@@ -59,7 +59,7 @@ struct FolderView: View {
                                 Text("Idea Video").bold()
                                 Text("Friday  Portraits").foregroundColor(.gray)
                                 HStack{
-                                    Image(systemName: "folder")
+                                    Image(systemName: "folder").accessibilityLabel(Text("Folder"))
                                     Text("Notes")}.foregroundColor(.gray)
                             }
                         }
@@ -68,20 +68,21 @@ struct FolderView: View {
                                 Text("Comprare Sketchbook").bold()
                                 Text("Friday  Matite 6B").foregroundColor(.gray)
                                 HStack{
-                                    Image(systemName: "folder")
+                                    Image(systemName: "folder").accessibilityLabel(Text("Folder"))
                                     Text("Notes")}.foregroundColor(.gray)
                             }
                         }
                         
                         
-                    }
+                    }.headerProminence(.increased)
+
                     Section(header: Text("Previous 30 Days")) {
                         HStack{
                             VStack(alignment:.leading){
                                 Text("Design Tips").bold()
                                 Text("8/10/23  How to do animation..").foregroundColor(.gray)
                                 HStack{
-                                    Image(systemName: "folder")
+                                    Image(systemName: "folder").accessibilityLabel(Text("Folder"))
                                     Text("Notes")}.foregroundColor(.gray)
                             }
                         }
@@ -90,7 +91,7 @@ struct FolderView: View {
                                 Text("Lista Spesa").bold()
                                 Text("19/10/23  Yogurt, latte,..").foregroundColor(.gray)
                                 HStack{
-                                    Image(systemName: "folder")
+                                    Image(systemName: "folder").accessibilityLabel(Text("Folder"))
                                     Text("Notes")}.foregroundColor(.gray)
                             }
                             
@@ -112,7 +113,7 @@ struct FolderView: View {
                     
                 }
                 ToolbarItem(placement: .status) {
-                    Text("62 Notes")
+                    Text("8 Notes")
                         .font(.system(size: 10))
                 }
                 ToolbarItem(placement: .topBarTrailing) {
